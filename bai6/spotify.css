@@ -1,0 +1,41 @@
+.nhac{
+    display: flex;
+    background-color: black;
+}
+.nhac1{
+    width: 20%;
+    background-color: rgb(56,56,55);
+}
+.nhac2{
+    width: 55%;
+    
+}
+.nhac3{
+    width: 25%;
+    
+}
+.nhac1-1{
+    display: flex;
+    border-radius: 15px;
+    margin: 5px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nhac1-2{
+    display: flex;
+}
+.create{
+    font-size: 15px;
+    float:right;
+    color: white;
+    text-decoration: none;
+    border: 2px solid gray;
+    border-radius: 15px;
+    margin: 5px;
+}
+.a1{
+    color: white;
+    background-color: gray;
+}

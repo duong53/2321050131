@@ -1,6 +1,6 @@
 body{
-    background-color: grey;
-    margin: 0px;
+    background-color: black;
+    margin: 0 auto;
 }
 header{
     background-color: black;
@@ -8,22 +8,55 @@ header{
     height: 10vh;
 }
 .container{
+    display: flex;
     width: 70%;
     margin: auto;
+    background-color: black;
+    
 }
 
 ul{
     list-style: none;
     display: flex;  
-    padding: 0px 0px 0px 0px; 
+    
+}
+li{
+    padding: 0px 15px 0px 0px;
+    font-size: 15px;
 }
 a{
     color: white;
     text-decoration: none;
 }
+
+.quangcao{
+    display: block;
+    justify-content: center;
+    /* width: 70%; */
+    height: 30vh;
+    background-color: black;
+}
+.anh1{
+    justify-content: center;
+    width: 100%;
+}
+.anh2{
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    /* margin-top: 50px; */
+}
+.tieude{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    color: white;
+    font-size: 25px;
+    padding-top: 10px;
+}
 main{
     width: 70%;
-    background-color: black;
-    height: 1000px;
     margin: auto;
+    background-color: black;
 }

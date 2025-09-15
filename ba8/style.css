@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(132, 132, 149);
+    margin: 0 auto;
+}
+
+
+.container{
+    display: flex;
+    width: 100%;
+   text-align: center;
+    height: 30vh;
+    
+}
+
+    
+
+.thongbao{
+    display: flex;
+    text-align: center;
+    
+}
+
+main {
+    width: 50%;   
+    /* height: 400px;   */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.giua {
+    justify-content: center;
+
+    width: 50%;
+    height: 200px;               
+    background-color: white;
+    border-radius: 3px black;
+  
+    text-align: center;       
+}

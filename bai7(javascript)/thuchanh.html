@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let khachHang = {
+            maDonHang: "DH001",
+            thongTinKhachHang: {
+                hoten: "Ngô Hoàng Dương",
+                sdt: "0983628156",
+                trangThaiThanhVien: true,
+            },
+            danhSachSanPham: {
+                Aothun: {
+                    maSanPham: "SP001",
+                    tenSanPham: "Aothun",
+                    soLuong: 2,
+                    donGia: 150000
+                },
+                Aongan: {
+                    maSanPham: "SP002",
+                    tenSanPham: "Áo ngan",
+                    soLuong: 2,
+                    donGia: 150000,
+                },
+                Aodai: {
+                    maSanPham: "SP003",
+                    tenSanPham: "Aodai",
+                    soLuong: 2,
+                    donGia: 150000,
+                },
+            },
+            trangThaiThanhToan: true,
+            diaChiGiaoHang: "Hà Nội",
+
+        };
+        document.writeln(khachHang.thongTinKhachHang.hoten);
+        document.writeln("Tong tien: " + (khachHang.danhSachSanPham.Aothun.soLuong * khachHang.danhSachSanPham.Aothun.donGia +
+            khachHang.danhSachSanPham.Aongan.soLuong * khachHang.danhSachSanPham.Aongan.donGia +
+            khachHang.danhSachSanPham.Aodai.soLuong * khachHang.danhSachSanPham.Aodai.donGia) + "<br>");
+        //String
+        let hoTen = "Ngô Hoàng Dương";
+        document.writeln(hoTen.length + "<br>"); // độ dài chuỗi//
+
+        let myString = "Hello Zenmeizan";
+        document.writeln(myString[4] + "<br>");// truy xuất phần tử trong chuỗi//
+        document.writeln(myString.slice(1, 4) + "<br>")// cắt chuỗi từ vị trí 1 đến vị trí 4 không bao gồm vị trí 4//
+        document.writeln(myString.replace("Hello", "Hehe") + "<br>")// thay thế chuỗi//
+        document.writeln(myString.toUpperCase() + "<br>")// chuyển chuỗi thành chữ in hoa//
+        document.writeln(myString.toLowerCase() + "<br>")// chuyển chuỗi thành chữ in thường//
+        document.writeln(myString.indexOf("a") + "<br>")// tìm vị trí chuỗi con trong chuỗi//
+        document.writeln(myString.includes("e"))// kiểm tra chuỗi con có trong chuỗi hay không//
+        document.writeln(myString.split('e') + "<br>");// tách chuỗi thành mảng dựa trên kí tự phân tách//
+        document.writeln(myString.startsWith("H") + "<br>");// kiểm tra chuỗi có bắt đầu bằng chuỗi con hay không//
+        document.writeln(isNaN(10));// kiểm tra có phải là số hay không//isNotaNumber
+        document.writeln(isNaN("10j"));// kiểm tra có phải là số hay không//isNotaNumber
+
+        // let toDay = new Date('2005-3-5');
+
+        let toDay = new Date();
+        document.writeln(toDay + "<br>");// in ra ngày giờ hiện tại//
+        document.writeln(toDay.getFullYear() + "<br>");// in ra năm hiện tại//
+        document.writeln(toDay.getMonth() + "<br>");// in ra tháng hiện tại-1
+        document.writeln(toDay.getDate() + "<br>");// in ra ngày hiện tại//
+        document.writeln(toDay.getDay() + "<br>");// in ra thứ hiện tại chủ nhật=0, thứ 2=1//
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Mảng
+        let arr = [1, 2, 3, 4, 'a', 'b', 'c', 2, 3];
+        let ten = 'ten';
+        let thongtin = {
+            ten: ten
+        }
+        document.writeln(Array.isArray(arr) + "<br>");// kiểm tra có phải mảng hay không//
+        document.writeln(arr.length + "<br>");// độ dài mảng//
+        document.writeln(arr[2] + "<br>");// truy xuất phần tử trong mảng//
+        document.writeln(arr.indexOf(3) + "<br>");// tìm vị trí phần tử trong mảng//
+        document.writeln(arr.lastIndexOf(3) + "<br>");// tìm vị trí phần tử trong mảng từ cuối về đầu//
+
+        let a, b, c, d;
+        a = [1, 2, 3];
+        b = 'JavaScript';
+        c = [42, 'JS'];
+        d = a.concat(b, c);    //nối mảng//
+        d = d.join("-");// chuyển mảng thành chuỗi dựa trên kí tự phân tách//
+        //d.pop(); // xóa phần tử cuối mảng//
+        //d.push("END"); // thêm phần tử vào cuối mảng//
+        //d.reverse(); // đảo ngược mảng//  
+        //d.shift(); // xóa phần tử đầu mảng//
+        //d.unshift("START"); // thêm phần tử vào đầu mảng//  
+        document.writeln(d + "<br>");
+
+
+
+
+
+        // let so = 100000000000000001;
+        // let soCuoi = parseInt(so.length - 1);
+        // if (soCuoi % 2 == 0) {
+        //     document.writeln(so + " là số chẵn<br>");
+        // } else {
+        //     document.writeln(so + " là số lẻ<br>");
+        // }
+
+        let now = new Date().getHours();
+        document.writeln("Bây giờ là " + now + " giờ<br>");
+        if (now >= 5 && now < 10) {
+            document.writeln("Chao buoi sang<br>");
+        } else if (now >= 10 && now < 13) {
+            document.writeln("Chao buoi trua<br>");
+        } else if (now >= 13 && now < 17) {
+            document.writeln("Chao buoi chieu<br>");
+        } else if (now >= 17 && now < 22) {
+            document.writeln("Chao buoi toi<br>");
+        } else {
+            document.writeln("Chao buoi dem<br>");
+        }
+
+
+        //a,b,c thi diem 3 mon trong do
+        // let diema, diemb, diemc, tong;
+       
+
+        // let tong = diema * 0.6 + diemb * 0. 3 + diemc * 0. 1;
+        // if (tong >= 8 && tong <= 10) {
+        //     document.writeln("Xep loai A<br>");
+        // } else if (tong >= 7 && tong < 8) {
+        //     document.writeln("Xep loai B<br>");
+        // } else if (tong >= 5 && tong < 7) {
+        //     document.writeln("Xep loai C<br>");
+        // } else if (tong >= 4 && tong < 5) {
+        //     document.writeln("Xep loai D<br>");
+        // } else {
+        //     document.writeln("Xep loai F<br>");
+        // }
+    </script>
+</body>
+
+</html>

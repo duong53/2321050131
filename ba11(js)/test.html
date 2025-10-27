@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <div></div> -->
+
+<body>
+    <h1>Tinh điểm chữ</h1>
+    <h3>Biết tổng: A*0.6+B*0.3+C*0.1</h3>
+    <div>
+        <p>Nhập vào điểm A</p>
+        <input type="number" id="diemA">
+    </div>
+    <div>
+        <p>Nhập vào điểm B</p>
+        <input type="number" id="diemB">
+    </div>
+    <div>
+        <p>Nhập vào điểm C</p>
+        <input type="number" id="diemC">
+    </div>
+    <div>
+        <button onclick="tinhTong()">Tính tổng</button>
+    </div>
+    <div>
+        Kết quả:<input type="text" id="ketQua" class="ketqua">
+    </div>
+    <script>
+        function tinhTong() {
+            let diemA = parseFloat(document.getElementById("diemA").value);
+            let diemB = parseFloat(document.getElementById("diemB").value);
+            let diemC = parseFloat(document.getElementById("diemC").value);
+            let canhBao = ""; c -
+            if (!diemA || diemA < 0 || diemA > 10) {
+                canhBao += "Vui lòng nhập diem A\n";
+            }
+            if (!diemB || diemB < 0 || diemB > 10) {
+                canhBao += "Vui lòng nhập diem B\n";
+            }
+            if (!diemC || diemC < 0 || diemC > 10) {
+                canhBao += "Vui lòng nhập diem C\n";
+            }
+            if (canhBao) {
+                alert(canhBao);
+            }
+
+            let tong = diemA * 0.6 + diemB * 0.3 + diemC * 0.1;
+            if (tong >= 9 && tong <= 10) {
+                document.getElementById("ketQua").value = "A+";
+            } else if (tong >= 8.5 && tong < 9) {
+                document.getElementById("ketQua").value = "A";
+            } else if (tong >= 8 && tong < 8.5) {
+                document.getElementById("ketQua").value = "B+";
+            } else if (tong >= 7 && tong < 8) {
+                document.getElementById("ketQua").value = "B";
+            } else if (tong >= 6.5 && tong < 7) {
+                document.getElementById("ketQua").value = "C+";
+            } else if (tong >= 5.5 && tong < 6.5) {
+                document.getElementById("ketQua").value = "C";
+            } else if (tong >= 5 && tong < 5.5) {
+                document.getElementById("ketQua").value = "D+";
+            } else if (tong >= 4 && tong < 5) {
+                document.getElementById("ketQua").value = "D";
+            } else {
+                document.getElementById("ketQua").value = "F";
+            }
+            // document.getElementById("ketQua").value = tong;
+
+        }
+
+    </script>
+</body>
+
+</html>

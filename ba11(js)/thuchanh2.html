@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* align-items: center; căn dọc nhưng do có flex-direction: column nên ngược lạ */
+        }
+    </style>
+</head>
+<!-- i -->
+
+<body>
+    <div class="container">
+        <h1>Ví dụ thay đổi chế độ</h1>
+        <img class="anh1" width="300px" src="./Screenshot 2025-10-31 093931.png" alt="matroi.png">
+        <div>
+            <h1>Che do sang</h1>
+        </div>
+        <div>
+            <button onclick="doiChedo()">Chuyen sang giao dien</button>
+        </div>
+    </div>
+    <script>
+        let cheDo = true;
+        function doiChedo() {
+            //Neu chedo la sang thi chuyen sang toi, nguoc lai chuyen sang sang
+            if (cheDo == true) {
+                document.getElementsByTagName('body')[0].style.backgroundColor = 'black';
+                document.getElementsByTagName('h1')[0].style.color = 'yellow';
+                document.getElementsByTagName('h1')[1].style.color = 'white';
+                document.getElementsByTagName('h1')[1].imerHTML = 'Che do toi';
+                document.getElementsByClassName('anh1')[0].src = '../anhth/Screenshot 2025-09-19 105759.png';
+                cheDo = false;
+            }
+            else {
+                document.getElementsByTagName('body')[0].style.backgroundColor = 'white';
+                document.getElementsByTagName('h1')[0].style.color = 'black';
+                document.getElementsByTagName('h1')[1].style.color = 'black';
+                document.getElementsByTagName('h1')[1].innerHTML = 'Che do sang';
+                document.getElementsByClassName('anh1')[0].src = './Screenshot 2025-10-31 093931.png';
+                cheDo = true;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

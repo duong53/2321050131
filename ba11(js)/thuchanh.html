@@ -19,13 +19,22 @@
         <input type="number" id="so2">
     </div>
     <div>
-        <button onclick="tinhTong()">Tính tổng</button>
+        <button onclick="tinhtoan('cong')">Tính tổng</button>
+    </div>
+    <div>
+        <button onclick=" tinhtoan('tru')">Tính hiệu</button>
+    </div>
+    <div>
+        <button onclick="tinhtoan('nhan')">Tính tich</button>
+    </div>
+    <div>
+        <button onclick="tinhtoan('chia')">Tính thương</button>
     </div>
     <div>
         Kết quả:<input type="number" id="ketQua" class="ketqua">
     </div>
     <script>
-        function tinhTong() {
+        function tinhtoan(phepToan) {
             let so1 = parseFloat(document.getElementById("so1").value);
             let so2 = parseFloat(document.getElementById("so2").value);
             let canhBao = "";
@@ -39,9 +48,16 @@
                 alert(canhBao);
             }
 
-            let tong = so1 + so2;
-            document.getElementById("ketQua").value = tong;
-
+            if (phepToan == 'cong') {
+                ketQua = so1 + so2;
+            } else if (phepToan == 'tru') {
+                ketQua = so1 - so2;
+            } else if (phepToan == 'nhan') {
+                ketQua = so1 * so2;
+            } else if (phepToan == 'chia') {
+                ketQua = so1 / so2;
+            }
+            document.getElementById("ketQua").value = ketQua;
         }
 
     </script>

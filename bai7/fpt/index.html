@@ -1,70 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <div class="container">
-        <div>
-          <img src="./img/logowebsite4x_1748221195181.png" alt="logo"  width="125px"/>
+        <div class="banner" style="width: 100%; height: 400px; background-size: cover; border-radius: 5px;"></div>
+        <div class="container">
+            <div>
+                <img src="./img/logowebsite4x_1748221195181.png" alt="logo" width="125px" />
+            </div>
+            <div class="giua">
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Truyền hinh</a></li>
+                    <li><a href="#">Phim bộ</a></li>
+                    <li><a href="#">Vleague</a></li>
+                    <li><a href="#">Thiếu nhi</a></li>
+                    <li><a href="#">Xem thêm</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <i class="fa fa-search" aria-hidden="true" style="color: white; margin: 0px 5px 0px 5px;"></i>
+                    <i class="fa fa-bell-o" aria-hidden="true" style="color: white; margin: 0px 5px 0px 5px"></i>
+                    <li class=""><a href="#">Mua gói</a></li>
+                    <li><a href="#">Đăng nhập</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="giua">  
-          <ul>
-            <li><a href="#">Trang chủ</a></li>
-            <li><a href="#">Truyền hinh</a></li>
-            <li><a href="#">Phim bộ</a></li>
-            <li><a href="#">Vleague</a></li>
-            <li><a href="#">Thiếu nhi</a></li>
-            <li><a href="#">Xem thêm</a></li>
-          </ul>
-        </div>
-        <div class="right">
-          <ul>
-            <i class="fa fa-search" aria-hidden="true" style="color: white; margin: 0px 5px 0px 5px;"></i>
-            <i class="fa fa-bell-o" aria-hidden="true" style="color: white; margin: 0px 5px 0px 5px"></i>
-            <li class=""><a href="#">Mua gói</a></li>
-            <li><a href="#">Đăng nhập</a></li>
-          </ul>
-        </div>
-      </div>
-      
+
     </header>
     <main>
         <div class="quangcao">
             <div class="anh1">
-            <img src="./img/09_68bfea5810013f0001205210.jpg" alt="ads" width="100%" style="border-radius: 5px;"/>
+                <img src="./img/09_68bfea5810013f0001205210.jpg" alt="ads" width="100%" style="border-radius: 5px;" />
 
             </div>
-            
+
             <div class="anh2">
-            <img src="./img/phim/kungfupanda.jpg" alt="ads" width="100% " height="500px" style="margin-top: 20px;"/>
+                <img id="dmm" src="./img/mua-do2-1122.jpeg" alt="ads" width="100% " height="500px"
+                    style="margin-top: 20px;" />
             </div>
         </div>
         <div class="phim">
             <div class="tieude">
-                <div class="thongbao" style="font-size: 30px;" >Cày phim mỗi ngày</div>
+                <div class="thongbao" style="font-size: 30px;">Cày phim mỗi ngày</div>
                 <div class="xemthem" style="font-size: 18px;margin-top: 15px;;">Xem thêm</div>
             </div>
             <div class="noidung">
-                <div class="hinhanh">
-                    <img src="./img/phim/minion.jpg" alt="" width="200px" height="300px" style="margin-right: 17px;">
-                    <p>Minions: The Rise of Gru (2022)</p>
+                <div onclick="chonPhim(1)" class="hinhanh">
+                    <img src="./img/phim/conan.jpg" alt="" width="200px" height="300px" style="margin-right: 17px;">
+                    <p>Conan</p>
                 </div>
-                <div class="hinhanh">
+                <div onclick="chonPhim(2)" class="hinhanh">
                     <img src="./img/phim/johnwi.jpg" alt="" width="200px" height="300px" style="margin-right: 17px;">
                     <p>Cuon bay</p>
                 </div>
-                <div class="hinhanh">
+                <div onclick="chonPhim(3)" class="hinhanh">
                     <img src="./img/phim/mai.jpg" alt="" width="200px" height="300px" style="margin-right: 17px;">
                     <p>Sau bao nhieu nam</p>
                 </div>
-                <div class="hinhanh">
-                    <img src="./img/phim/deptraithaysaisai.jpg" alt="" width="200px" height="300px" style="margin-right: 17px;">
+                <div onclick="chonPhim(4)" class="hinhanh">
+                    <img src="./img/phim/deptraithaysaisai.jpg" alt="" width="200px" height="300px"
+                        style="margin-right: 17px;">
                     <p>Sai hay hong sai</p>
                 </div>
                 <div class="hinhanh">
@@ -80,7 +85,8 @@
                     <p>Sau bao nhieu nam</p>
                 </div>
                 <div class="hinhanh">
-                    <img src="./img/phim/deptraithaysaisai.jpg" alt="" width="200px" height="300px" style="margin-right: 17px;">
+                    <img src="./img/phim/deptraithaysaisai.jpg" alt="" width="200px" height="300px"
+                        style="margin-right: 17px;">
                     <p>Sai hay hong sai</p>
                 </div>
                 <div class="hinhanh">
@@ -96,19 +102,20 @@
                     <p>Sau bao nhieu nam</p>
                 </div>
                 <div class="hinhanh">
-                    <img src="./img/phim/deptraithaysaisai.jpg" alt="" width="200px" height="300px" style="margin-right: 17px;">
+                    <img src="./img/phim/deptraithaysaisai.jpg" alt="" width="200px" height="300px"
+                        style="margin-right: 17px;">
                     <p>Sai hay hong sai</p>
                 </div>
                 <div>
-                    <video controls width="200px" height="300px">
-                        <source src="../fb322858-8412-405f-ae10-c132624b9101.mp4" type="video/mp4">
+                    <video controls width="880px" height="350px">
+                        <source src="../fpt/5dd83e18-d8a1-48b3-b0f1-697409ab9520.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
         </div>
         <div class="phim">
             <div class="tieude">
-                <div class="thongbao" style="font-size: 30px;" >Mới ra mắt</div>
+                <div class="thongbao" style="font-size: 30px;">Mới ra mắt</div>
                 <div class="xemthem" style="font-size: 18px;margin-top: 15px;">Xem thêm</div>
             </div>
             <div class="noidung">
@@ -125,7 +132,8 @@
                     <p>Sau bao nhieu nam</p>
                 </div>
                 <div class="hinhanh">
-                    <img src="./img/phim/deptraithaysaisai.jpg" alt="" width="200px" height="300px" style="margin-right: 17px;">
+                    <img src="./img/phim/deptraithaysaisai.jpg" alt="" width="200px" height="300px"
+                        style="margin-right: 17px;">
                     <p>Sai hay hong sai</p>
                 </div>
                 <div class="hinhanh">
@@ -141,7 +149,8 @@
                     <p>Sau bao nhieu nam</p>
                 </div>
                 <div class="hinhanh">
-                    <img src="./img/phim/deptraithaysaisai.jpg" alt="" width="200px" height="300px" style="margin-right: 17px;">
+                    <img src="./img/phim/deptraithaysaisai.jpg" alt="" width="200px" height="300px"
+                        style="margin-right: 17px;">
                     <p>Sai hay hong sai</p>
                 </div>
                 <div class="hinhanh">
@@ -157,15 +166,22 @@
                     <p>Sau bao nhieu nam</p>
                 </div>
                 <div class="hinhanh">
-                    <img src="./img/phim/deptraithaysaisai.jpg" alt="" width="200px" height="300px" style="margin-right: 17px;">
+                    <img src="./img/phim/deptraithaysaisai.jpg" alt="" width="200px" height="300px"
+                        style="margin-right: 17px;">
                     <p>Sai hay hong sai</p>
                 </div>
             </div>
         </div>
 
 
-        </div>
+
     </main>
-    <footer></footer>
-  </body>
+    <footer>
+        <div class="footer">
+            <div class="">
+            </div>
+        <script src="./script.js"></script>
+    </footer>
+</body>
+
 </html>

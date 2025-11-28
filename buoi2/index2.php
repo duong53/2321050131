@@ -5,7 +5,7 @@
     $cookieName = "user";
     $cookieValue = "HoangDuong";
     //86400 = 30ngay
-    //setcookie($cookieName, $cookieValue, time() + (86400), "/" )
+    setcookie($cookieName, $cookieValue, time() + (86400), "/" );
 
      if(isset($_COOKIE[$cookieName]) ){
         echo "cookie da ton tai";

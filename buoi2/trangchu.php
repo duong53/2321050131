@@ -11,9 +11,11 @@
     if(!isset($_SESSION["username"])){
         header("Location: index.php");
     }
-    
-    echo "Xin chào "
+      
     ?>
     <h1>Trang chủ</h1>
+    <?php
+        echo "<p>Xin chào " . $_SESSION["username"] . "</p>";
+    ?>
 </body>
 </html>

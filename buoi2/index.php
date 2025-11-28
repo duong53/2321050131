@@ -18,6 +18,7 @@
         <input type="submit" value="Đăng nhập">
     </form>
     <?php
+        include('connect.php');
         if(isset($_POST['username']) && isset($_POST['password'])){
             $tenDangNhap = $_POST['username'];
             $matKhau = $_POST['password'];
@@ -25,13 +26,23 @@
 
             //Nếu tên đăng nhập =admin
             //Mật khẩu =123 thì cho phép người dùng đăng nhập thành công
-            if($tenDangNhap == 'admin' && $matKhau == '123'){
+            $sql = "select * from nguoi_dung where ten_dang_nhap = '$tenDangNhap' and mat_khau = '$matKhau'";
+            
+            $result = mysqli_query($conn,$sql);
+            if(mysqli_num_rows($result) > 0){
+                // echo "Đăng nhập thành công";
+                session_start();
                 $_SESSION["username"] = $tenDangNhap;
                 header("Location: trangchu.php");
-            }else{
-                echo "<p class='warning'>Sai thông tin đăng nhập</p>";
             }
-        }
+        //     if($tenDangNhap == 'admin' && $matKhau == '123'){
+        //         $_SESSION["username"] = $tenDangNhap;
+        //         header("Location: trangchu.php");
+        //     }else{
+        //         echo "<p class='warning'>Sai thông tin đăng nhập</p>";
+        //     }
+        // }
+    }
     ?>
 </body>
 </html>
